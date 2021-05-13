@@ -1,0 +1,425 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue","Helvetica", Arial, sans-serif;
+    font-size: 100%;
+    
+}
+body{
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smothing: antialiased !important;
+    background-color: #f6f9fe;
+}
+input, button{
+    outline: 0;
+}
+nav,ul{list-style: none;}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .8;
+}
+a:hover{opacity: 1;}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+#logo{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color:rgb(74, 75, 75);
+}
+header nav{
+    display: flex;
+}
+header li a{
+    color:rgb(74, 75, 75);
+}
+header li{
+    margin: 0 15px;
+}
+header li:first-child{
+    margin-left: 0;
+}
+header li:last-child{
+    margin-right: 0;
+}
+@media(max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        margin-bottom: 15px;
+    }
+}
+.capa{
+    background-image: url('../images/Wallpaper\ OmniStack\ 10\ -\ 1440x900.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: #e6ecf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+.capa h1{font-size: 3.2rem;margin-bottom: 15px;}
+.capa h3{font-size: 2rem;margin-bottom: 15px;}
+.capa a{opacity:1;background-color: rgb(74, 75, 75);border-radius: 8px;text-transform: uppercase; color: #e6ecf0;padding: 20px 50px;
+border: none;box-shadow: rgb(118, 118, 118) 0 1px 6px;}
+@media(max-width:700px) {
+    .capa h1{
+        font-size: 2.5rem;
+    };
+    .capa h3{
+        font-size: 1.5rem;
+    };
+}
+.about{
+    display: flex;
+    text-align: center;
+    padding: 25px 60px;
+    line-height: 1.80857;
+    flex-basis: 50px;
+}
+.about div{
+    height: 366px;
+    width: 1500px;
+    padding: 0 45px;
+}
+.about div img{
+    background-clip: content-box;
+    width: 100%;
+    height: 100%;
+    box-shadow: -9px -9px 0px rgb(1, 63, 29)
+}
+.about nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+.about nav h1{
+    font-size: 30px;
+    color: #bfbfbf;
+    
+}
+.about nav h1 span{
+    color: rgb(99, 99, 99);
+    letter-spacing: 5px;
+}
+.about nav h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.about nav p{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color:#6c757d;
+    text-align: justify;
+}
+.about nav a{
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 12px 50px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: .1875rem;  
+    color: rgb(74, 75, 75);
+    border-color: rgb(74, 75, 75);     
+}
+@media(max-width:700px) {
+    .about{
+        padding: 20px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    };
+    .about div{
+        flex-basis: 100%;
+        padding: -35px;
+    }
+    .about div image {
+        width: 30cm;   
+    };
+   
+}
+.services{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: black;
+}
+.services h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+.services p{
+    color: #bfbfbf;
+   max-width: 600px;
+   margin-bottom: 28px;
+}
+.services hr{
+    width: 200px;
+    margin-bottom: 60px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+.services ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.services ul li{
+   padding: 0 30px;
+   text-align: center;
+}
+.services ul li img{
+    height: 45px;
+    margin-bottom: 10px;
+ }
+ .services ul li h4{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+ }
+ .services ul li p{
+    color: #bfbfbf;
+ }
+ @media(max-width:850px) {
+    .services ul{
+       flex-direction: column;
+    };
+}
+.Projectos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    background-color: white;
+}
+.Projectos h3{
+    color: #6c757d;
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+.Projectos p{
+    color: #6c757d;
+   max-width: 600px;
+   margin-bottom: 28px;
+}
+.Projectos hr{
+    width: 200px;
+    margin-bottom: 60px;
+    height: 2px;
+    background-color: #6c757d;
+    border: none;
+}
+.Projectos  ul{
+    display: flex;flex-direction: column;
+    text-align: justify;
+    margin-right: 40px;
+}
+.Projectos ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+.Projectos ul li p{
+    line-height: 16px;
+    font-size: .8em;
+    color: #374b64;
+}
+.Projectos ul li img{
+    height: 30px;
+    margin-right: 15px;
+
+}
+.Projectos div{
+    display: flex;
+}
+.Projectos div:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.Projectos div #caixa_de_video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/Wallpaper\ OmniStack\ 10\ -\ 1440x900.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 366px;
+    padding: 0 45px;
+    flex: 1 1 300px;
+    
+}
+
+.Projectos div #caixa_de_video #play{
+    width: 80px;
+    cursor: pointer;
+}
+
+@media(max-width:850px) {
+    .Projectos div{
+        padding: 20px 0;
+        justify-content: center;
+       flex-wrap: wrap;
+    };
+
+}
+.escolha{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: black;
+}
+.escolha h3{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+.escolha p{
+    color: #bfbfbf;
+   max-width: 600px;
+   margin-bottom: 28px;
+}
+.escolha hr{
+    width: 200px;
+    margin-bottom: 60px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+.escolha ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.escolha ul li{
+    padding: 5px 6px;
+    box-shadow: 0px 0px 4px rgb(255, 254, 254);
+    margin-right: 30px;
+    margin-bottom: 24px;
+}
+
+.escolha ul li span{    
+    font-size: 28px;
+    font-weight: 700;
+    color: #374b64;
+ }
+ .escolha ul li h4{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #e6ecf0;
+ }
+ .escolha ul li p{
+     color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 12px 0;
+ }
+ .escolha ul li:hover{
+    background: #fff;
+    color: #374b64;
+    box-shadow: -4px -6px 0 #374b64;
+}
+.escolha ul li:hover h4, .escolha li:hover p {
+    color: rgb(74, 75, 75);
+}
+.escolha ul li:hover span{
+    color: #374b64;
+}
+ @media(max-width:850px) {
+    .escolha ul{
+       flex-direction: column;
+    };
+ }
+
+ .avaliações{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #f6f5f5;
+}
+.avaliações h3{
+    color: #6c757d;
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+.avaliações p{
+    color: #bfbfbf;
+   max-width: 600px;
+   margin-bottom: 28px;
+}
+.avaliações hr{
+    width: 200px;
+    margin-bottom: 60px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+.avaliações ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.avaliações ul li{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 12px 37px;
+    line-height: 1.6rem;
+    box-shadow: 0px 0px 4px rgb(255, 254, 254);
+    margin-right: 30px;
+    margin-bottom: 24px;
+    background-color: #fff;
+}
+
+ .avaliações ul li p{
+     text-align: justify;
+     width: 100%;   
+ }
+.avaliações ul li div{    
+    display: flex;
+    align-items: center;
+ }
+.avaliações ul li div img{
+    width: 19px;
+    height: 45px;
+    flex: 0 0 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+ @media(max-width:850px) {
+    .avaliações ul{
+       flex-direction: column;
+    };
+ }
